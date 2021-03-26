@@ -1,19 +1,23 @@
-package p02.lecture;
+package p02.textbook;
 
-public class A07TypeCharEx1 {
+public class CharExample {
 	public static void main(String[] args) {
-		String str = "lorem, ipsum, JAVA";
-		
-		int count = 0;
-		for (int i = 0; i < str.length(); i++) {
-			char c = str.charAt(i);
-			
-//			if ((0x61 <= c && c <= 0x7a) || (0x41 <= c && c < 0x5a)) {
-//			if ((97 <= c && c <= 122) || (65 <= c && c < 90)) {
-			if (('a' <= c && c <= 'z') || ('A' <= c && c < 'Z')) {
-				count++;
-			}
-		}
-		System.out.println(count);
+		char c1 = 'A';
+		char c2 = 65;
+		char c3 = '\u0041';
+
+		char c4 = '가';
+		char c5 = 44032;
+		char c6 = '\uac00';
+
+		int uniCode = c1;
+
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(c3);
+		System.out.println(c4);
+		System.out.println(c5);
+		System.out.println(c6);
+		System.out.println(uniCode);
 	}
 }
