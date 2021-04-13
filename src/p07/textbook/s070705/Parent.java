@@ -1,6 +1,8 @@
-package p07.textbook.s070701;
+package p07.textbook.s070705;
 
 public class Parent {
+	public String field1;
+
 	public void method1() {
 		System.out.println("Parent-method1()");
 	}
